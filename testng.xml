@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <parameter name="browsernm" value="chrome"></parameter>
+  <parameter name="URL" value="http://www.newtours.demoaut.com/mercurywelcome.php"></parameter>
+  <parameter name="sec" value="500"></parameter>
+  <parameter name="usernm" value="Pranali@1"></parameter>
+  <parameter name="passwd" value="Passw@rd1"></parameter> 
+    <classes>
+      <class name="com.mt.modules.Launch">
+      <methods>
+      <include name="executeLaunch"></include>
+      </methods>
+      </class>
+      <class name="com.mt.modules.Login">
+      <methods>
+      <include name="executeLogin"></include>
+      </methods>
+      </class>
+      <class name="com.mt.modules.SignOff">
+      <methods>
+      <include name="executeSignOff"></include>
+      </methods>
+      </class>
+      </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

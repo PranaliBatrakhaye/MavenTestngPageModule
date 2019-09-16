@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="sec" value="500"/>
+  <parameter name="usernm" value="Pranali@1"/>
+  <parameter name="passwd" value="Passw@rd1"/>
+  <parameter name="browsernm" value="chrome"/>
+  <parameter name="URL" value="http://www.newtours.demoaut.com/mercurywelcome.php"/>
+  <test name="Test">
+    <parameter name="sec" value="500"/>
+    <parameter name="usernm" value="Pranali@1"/>
+    <parameter name="passwd" value="Passw@rd1"/>
+    <parameter name="browsernm" value="chrome"/>
+    <parameter name="URL" value="http://www.newtours.demoaut.com/mercurywelcome.php"/>
+    <classes>
+      <class name="com.mt.modules.Launch">
+        <methods>
+          <include name="executeLaunch"/>
+        </methods>
+      </class> <!-- com.mt.modules.Launch -->
+      <class name="com.mt.modules.Login">
+        <methods>
+          <include name="executeLogin"/>
+        </methods>
+      </class> <!-- com.mt.modules.Login -->
+      <class name="com.mt.modules.SignOff">
+        <methods>
+          <include name="executeSignOff"/>
+        </methods>
+      </class> <!-- com.mt.modules.SignOff -->
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="sec" value="500"/>
+    <parameter name="usernm" value="Pranali@1"/>
+    <parameter name="passwd" value="Passw@rd1"/>
+    <parameter name="browsernm" value="chrome"/>
+    <parameter name="URL" value="http://www.newtours.demoaut.com/mercurywelcome.php"/>
+    <classes>
+      <class name="com.mt.modules.Launch">
+        <methods>
+          <include name="executeLaunch" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.mt.modules.Launch -->
+      <class name="com.mt.modules.SignOff">
+        <methods>
+          <include name="executeSignOff"/>
+        </methods>
+      </class> <!-- com.mt.modules.SignOff -->
+      <class name="com.mt.modules.Login">
+        <methods>
+          <include name="executeLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.mt.modules.Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
