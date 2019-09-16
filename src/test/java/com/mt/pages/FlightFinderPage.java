@@ -23,6 +23,7 @@ public class FlightFinderPage
 	
 	public void verifyFlightFinderimg()
 	{
+		System.out.println("hello");
 		boolean flag=objflightfinder.isDisplayed();
 		System.out.println("Flight finder image is displayed");
 	}
